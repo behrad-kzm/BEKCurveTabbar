@@ -47,6 +47,12 @@ class BEKCurveTabbar: UITabBar {
         }
     }
     
+    @IBInspectable public var selectedTextColor: UIColor = .blue  {
+        didSet {
+            layoutIfNeeded()
+        }
+    }
+    
     @IBInspectable public var borderColor: UIColor = .clear  {
         didSet {
             layoutIfNeeded()
@@ -59,9 +65,21 @@ class BEKCurveTabbar: UITabBar {
         }
     }
     
+    @IBInspectable public var labelOffset: CGFloat = 0.0  {
+        didSet {
+            layoutIfNeeded()
+        }
+    }
+    
     @IBInspectable public var hidesWhenDeseleted: Bool = true
     
-    @IBInspectable public var font: UIFont = .systemFont(ofSize: 11)  {
+    public var font: UIFont = .systemFont(ofSize: 11)  {
+        didSet {
+            layoutIfNeeded()
+        }
+    }
+    
+    public var selectedFont: UIFont = .systemFont(ofSize: 11)  {
         didSet {
             layoutIfNeeded()
         }
