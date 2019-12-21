@@ -6,7 +6,7 @@ Full Customizable Tabbar with IBInspectables
 
 A fun replacement for UITabbar. The Component uses bezier paths.
 ## Demo
-<img src="https://github.com/behrad-kzm/BEKCurveTabbar/blob/master/Preview.png" width="600">
+<img src="https://github.com/behrad-kzm/BEKCurveTabbar/blob/master/Preview.png" height="600">
 
 ## Example
 
@@ -23,11 +23,8 @@ controller.tabbar = BEKCurveTabar()
 
 ## Installation
 ```swift
-...
 
 pod 'BEKCurveTabbar'
-
-...
 
 ```
 
