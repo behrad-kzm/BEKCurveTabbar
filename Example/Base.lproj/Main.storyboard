@@ -36,10 +36,10 @@
                                 <real key="value" value="0.10000000000000001"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="number" keyPath="margin">
-                                <real key="value" value="16"/>
+                                <real key="value" value="9"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
-                                <real key="value" value="45"/>
+                                <real key="value" value="24"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
                                 <color key="value" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

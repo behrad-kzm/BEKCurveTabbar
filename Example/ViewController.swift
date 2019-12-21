@@ -7,12 +7,14 @@
 //
 
 import UIKit
-
+import BEKCurveTabbar
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let controller = BEKCurveTabbar()
+        controller.he
     }
 
 

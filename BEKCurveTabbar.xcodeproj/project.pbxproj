@@ -18,6 +18,8 @@
 		1346AD9123AE540200EF00B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1346AD8F23AE540200EF00B5 /* LaunchScreen.storyboard */; };
 		1346AD9923AE544800EF00B5 /* BEKCurveTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1346AD9823AE544800EF00B5 /* BEKCurveTabbar.swift */; };
 		1346AD9B23AE548A00EF00B5 /* TabbarHeightRatios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1346AD9A23AE548A00EF00B5 /* TabbarHeightRatios.swift */; };
+		1346AD9D23AE601A00EF00B5 /* BEKCurveTabbar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1346AD6423AE53EA00EF00B5 /* BEKCurveTabbar.framework */; };
+		1346AD9E23AE601A00EF00B5 /* BEKCurveTabbar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1346AD6423AE53EA00EF00B5 /* BEKCurveTabbar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +30,28 @@
 			remoteGlobalIDString = 1346AD6323AE53EA00EF00B5;
 			remoteInfo = BEKCurveTabbar;
 		};
+		1346AD9F23AE601A00EF00B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1346AD5B23AE53EA00EF00B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1346AD6323AE53EA00EF00B5;
+			remoteInfo = BEKCurveTabbar;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1346ADA123AE601A00EF00B5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1346AD9E23AE601A00EF00B5 /* BEKCurveTabbar.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1346AD6423AE53EA00EF00B5 /* BEKCurveTabbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BEKCurveTabbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1346AD9D23AE601A00EF00B5 /* BEKCurveTabbar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +106,7 @@
 				1346AD7123AE53EA00EF00B5 /* BEKCurveTabbarTests */,
 				1346AD8323AE540000EF00B5 /* Example */,
 				1346AD6523AE53EA00EF00B5 /* Products */,
+				1346AD9C23AE601A00EF00B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,8 +123,7 @@
 		1346AD6623AE53EA00EF00B5 /* BEKCurveTabbar */ = {
 			isa = PBXGroup;
 			children = (
-				1346AD9723AE542D00EF00B5 /* Utils */,
-				1346AD9623AE542400EF00B5 /* Core */,
+				1346AD9623AE542400EF00B5 /* Classes */,
 				1346AD6723AE53EA00EF00B5 /* BEKCurveTabbar.h */,
 				1346AD6823AE53EA00EF00B5 /* Info.plist */,
 			);
@@ -129,20 +153,20 @@
 			path = Example;
 			sourceTree = "<group>";
 		};
-		1346AD9623AE542400EF00B5 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				1346AD9823AE544800EF00B5 /* BEKCurveTabbar.swift */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		1346AD9723AE542D00EF00B5 /* Utils */ = {
+		1346AD9623AE542400EF00B5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				1346AD9A23AE548A00EF00B5 /* TabbarHeightRatios.swift */,
+				1346AD9823AE544800EF00B5 /* BEKCurveTabbar.swift */,
 			);
-			path = Utils;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1346AD9C23AE601A00EF00B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,10 +226,12 @@
 				1346AD7E23AE540000EF00B5 /* Sources */,
 				1346AD7F23AE540000EF00B5 /* Frameworks */,
 				1346AD8023AE540000EF00B5 /* Resources */,
+				1346ADA123AE601A00EF00B5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1346ADA023AE601A00EF00B5 /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
@@ -316,6 +342,11 @@
 			isa = PBXTargetDependency;
 			target = 1346AD6323AE53EA00EF00B5 /* BEKCurveTabbar */;
 			targetProxy = 1346AD6F23AE53EA00EF00B5 /* PBXContainerItemProxy */;
+		};
+		1346ADA023AE601A00EF00B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1346AD6323AE53EA00EF00B5 /* BEKCurveTabbar */;
+			targetProxy = 1346AD9F23AE601A00EF00B5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

@@ -9,70 +9,116 @@
 import UIKit
 
 @IBDesignable
-class BEKCurveTabbar: UITabBar {
+/// A customizable UITabbar by BEKApps.com
+public class BEKCurveTabbar: UITabBar {
+    //MARK:- Properties
     
+    /**
+        HeightRatio will cross with screen height to calculate tabbar height.
+     
+        - Default value will change in different enviroments iphone, iphoneX, iPad, etc.
+    */
     @IBInspectable public var heightRatio: CGFloat = CGFloat(TabbarHeightRatios.bestSize.rawValue) {
         didSet {
             layoutIfNeeded()
         }
     }
     
+    /**
+        Margin is the space from the tabbar to Left Right and Bottom edge of screen.
+    */
     @IBInspectable public var margin: CGFloat = 12.0 {
         didSet {
             layoutIfNeeded()
         }
     }
     
+    /**
+        CornerRadius  for Tabbar container.
+    */
     @IBInspectable public var cornerRadious: CGFloat = 16.0 {
         didSet {
             layoutIfNeeded()
         }
     }
     
+    /**
+        Change the circle view behind selected tab icon.
+    */
     @IBInspectable public var selectedColor: UIColor = .blue  {
         didSet {
             layoutIfNeeded()
         }
     }
     
+    /**
+        Change the Background color of Tabbar curve container.
+    */
     @IBInspectable public var tabbarColor: UIColor = .white  {
         didSet {
             layoutIfNeeded()
         }
     }
     
+    /**
+        textColor of titleLabel for not selected Tabs.
+    */
     @IBInspectable public var textColor: UIColor = .blue  {
         didSet {
             layoutIfNeeded()
         }
     }
     
+    /**
+        textColor of titleLabel for selected Tab.
+        - Default is Blue.
+    */
     @IBInspectable public var selectedTextColor: UIColor = .blue  {
         didSet {
             layoutIfNeeded()
         }
     }
     
+    /**
+       Will borderColor of Tabbar container.
+        - Default is Clear Color.
+    */
     @IBInspectable public var borderColor: UIColor = .clear  {
         didSet {
             layoutIfNeeded()
         }
     }
     
+    /**
+       Will border width of Tabbar container.
+        - Default is 1.0.
+    */
     @IBInspectable public var borderWidth: CGFloat = 1.0  {
         didSet {
             layoutIfNeeded()
         }
     }
     
+    /**
+       labelOffset is the space between tab's icon and the title lable
+        - Default is 0.0.
+    */
     @IBInspectable public var labelOffset: CGFloat = 0.0  {
         didSet {
             layoutIfNeeded()
         }
     }
     
+    /**
+       hidesWhenDeseleted will hide other labels that are not selected
+        - Default is true.
+    */
     @IBInspectable public var hidesWhenDeseleted: Bool = true
     
+    /**
+       hidesWhenDeseleted will hide other labels that are not selected
+        - Default is true.
+    */
     public var font: UIFont = .systemFont(ofSize: 11)  {
         didSet {
             layoutIfNeeded()
@@ -98,6 +144,8 @@ class BEKCurveTabbar: UITabBar {
     
     private var shapeLayer: CALayer?
     
+    
+    //MARK:- Methodes
     private func addShape() {
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = createPath()
@@ -115,11 +163,11 @@ class BEKCurveTabbar: UITabBar {
         self.shapeLayer = shapeLayer
     }
     
-    override func draw(_ rect: CGRect) {
+    override public func draw(_ rect: CGRect) {
         self.addShape()
     }
     
-    override func sizeThatFits(_ size: CGSize) -> CGSize {
+    override public func sizeThatFits(_ size: CGSize) -> CGSize {
         let ratioConvertion = UIScreen.main.bounds.height * heightRatio
         let height = ratioConvertion > 0 && heightRatio < 1.0 ? ratioConvertion : UIScreen.main.bounds.height * CGFloat(TabbarHeightRatios.bestSize.rawValue)
         let insideRectHeight = (height - 2 * cornerRadious) > 0 ? (height - 2 * cornerRadious) : 0.0
