@@ -6,7 +6,7 @@ Full Customizable Tabbar with IBInspectables
 
 A fun replacement for UITabbar. The Component uses bezier paths.
 ## Demo
-<img src="https://github.com/popwarsweet/JellySlider/blob/master/demo.gif" width="600">
+<img src="https://github.com/behrad-kzm/BEKCurveTabbar/blob/master/Preview.png" width="600">
 
 ## Example
 
