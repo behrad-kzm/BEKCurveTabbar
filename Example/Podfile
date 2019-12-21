@@ -1,0 +1,6 @@
+use_frameworks!
+target 'BEKCurveTabbar_Tests' do
+  pod 'BEKCurveTabbar', :path => '../'
+  
+  
+end
