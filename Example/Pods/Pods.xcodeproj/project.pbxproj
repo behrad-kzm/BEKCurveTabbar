@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		066506CF223B6A80609E22E673198598 /* BEKCurveTabbar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0AEF9894EA54B363CB64934E29D1B3 /* BEKCurveTabbar-dummy.m */; };
+		1346ADA523AE6BB700EF00B5 /* BEKCurveTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1346ADA323AE6BB700EF00B5 /* BEKCurveTabbar.swift */; };
+		1346ADA623AE6BB700EF00B5 /* TabbarHeightRatios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1346ADA423AE6BB700EF00B5 /* TabbarHeightRatios.swift */; };
+		1FDCCD562F183A02A582109A838335BF /* Pods-BEKCurveTabbar_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CDE27D4CDAB10E335A52F2204AA858 /* Pods-BEKCurveTabbar_Tests-dummy.m */; };
+		43A133B11954A838442BD71AA4807843 /* BEKCurveTabbar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13441DCB45F33BEA0A991E3661BA6D86 /* BEKCurveTabbar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BDA05F0E9C5C061BEB1215ED4FC3A25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		8139F0A5FA851539EA03A2E7D79A0761 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		AD93FBB9557E1FEA1D2189BF79005778 /* Pods-BEKCurveTabbar_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C7BBEC7AC9FC236AD8958F19EC47B7D /* Pods-BEKCurveTabbar_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A06B61E378244942F7320246D4A9073A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28DBC6BD6A2C596C26C45F0D7848A9D9;
+			remoteInfo = BEKCurveTabbar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01D6A50D2E74A6348B6111E19C470EA3 /* Pods-BEKCurveTabbar_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BEKCurveTabbar_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0C7BBEC7AC9FC236AD8958F19EC47B7D /* Pods-BEKCurveTabbar_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BEKCurveTabbar_Tests-umbrella.h"; sourceTree = "<group>"; };
+		13441DCB45F33BEA0A991E3661BA6D86 /* BEKCurveTabbar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BEKCurveTabbar-umbrella.h"; sourceTree = "<group>"; };
+		1346ADA323AE6BB700EF00B5 /* BEKCurveTabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BEKCurveTabbar.swift; sourceTree = "<group>"; };
+		1346ADA423AE6BB700EF00B5 /* TabbarHeightRatios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarHeightRatios.swift; sourceTree = "<group>"; };
+		29AE98256D7A37573666CCD05F5EA3A3 /* BEKCurveTabbar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BEKCurveTabbar-Info.plist"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		36A2F73164EA705CB8AA84D88580918C /* BEKCurveTabbar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BEKCurveTabbar.modulemap; sourceTree = "<group>"; };
+		455A2DADB8B4B01C54B535A480C7B1ED /* Pods_BEKCurveTabbar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BEKCurveTabbar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66A35C3C3A233D3146D2C9F51AC58527 /* Pods-BEKCurveTabbar_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BEKCurveTabbar_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		6B0AEF9894EA54B363CB64934E29D1B3 /* BEKCurveTabbar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BEKCurveTabbar-dummy.m"; sourceTree = "<group>"; };
+		85733C1CBA766FA7E4C0533109FA3B8E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		8CCA0986DA9F65F94EA13A55B7A2D710 /* Pods-BEKCurveTabbar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BEKCurveTabbar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E60280DEE1A601364E00E05C45A50FA /* BEKCurveTabbar.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = BEKCurveTabbar.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A627C204C67B71954F00C0F9E6BD2F33 /* Pods-BEKCurveTabbar_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BEKCurveTabbar_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A9BE0F16132B55258EEF5CB101533D8C /* BEKCurveTabbar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BEKCurveTabbar-prefix.pch"; sourceTree = "<group>"; };
+		B3C9B3E3947ABA80CCF9C596B3F7A6F4 /* BEKCurveTabbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BEKCurveTabbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB8955C42D01DD64F2E7701D8A3C9FEE /* Pods-BEKCurveTabbar_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BEKCurveTabbar_Tests.modulemap"; sourceTree = "<group>"; };
+		DA277A1311344CBA2B942D2334A13ACE /* Pods-BEKCurveTabbar_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BEKCurveTabbar_Tests-Info.plist"; sourceTree = "<group>"; };
+		E8E655CDB134B69B7B888CDBE1553DB5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F4CDE27D4CDAB10E335A52F2204AA858 /* Pods-BEKCurveTabbar_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BEKCurveTabbar_Tests-dummy.m"; sourceTree = "<group>"; };
+		FB28905D4C98512786C956C52C4CAB47 /* Pods-BEKCurveTabbar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BEKCurveTabbar_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FDA2F1483858BC5D5FC2684B1057079B /* BEKCurveTabbar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BEKCurveTabbar.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32F67309810DE923BCA6C01D57FA5989 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BDA05F0E9C5C061BEB1215ED4FC3A25 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6305261DEDA1BBF1D83CBA2FB4B45A61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8139F0A5FA851539EA03A2E7D79A0761 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1346ADA223AE6B6D00EF00B5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1346ADA323AE6BB700EF00B5 /* BEKCurveTabbar.swift */,
+				1346ADA423AE6BB700EF00B5 /* TabbarHeightRatios.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		205D994023069C8ECE665027194B8ED9 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				1346ADA223AE6B6D00EF00B5 /* Classes */,
+				9E60280DEE1A601364E00E05C45A50FA /* BEKCurveTabbar.podspec */,
+				85733C1CBA766FA7E4C0533109FA3B8E /* LICENSE */,
+				E8E655CDB134B69B7B888CDBE1553DB5 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		4561FA8BA66F28DBB4380E0F23F4A8A9 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB22708F29F5DEBBAB7E0C3AB8803A08 /* BEKCurveTabbar */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		5A8653A472AFBBBB085733092B84D592 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				36A2F73164EA705CB8AA84D88580918C /* BEKCurveTabbar.modulemap */,
+				FDA2F1483858BC5D5FC2684B1057079B /* BEKCurveTabbar.xcconfig */,
+				6B0AEF9894EA54B363CB64934E29D1B3 /* BEKCurveTabbar-dummy.m */,
+				29AE98256D7A37573666CCD05F5EA3A3 /* BEKCurveTabbar-Info.plist */,
+				A9BE0F16132B55258EEF5CB101533D8C /* BEKCurveTabbar-prefix.pch */,
+				13441DCB45F33BEA0A991E3661BA6D86 /* BEKCurveTabbar-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/BEKCurveTabbar";
+			sourceTree = "<group>";
+		};
+		63A8C3C9A0DB69A3904A23A00A42FA74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3C9B3E3947ABA80CCF9C596B3F7A6F4 /* BEKCurveTabbar.framework */,
+				455A2DADB8B4B01C54B535A480C7B1ED /* Pods_BEKCurveTabbar_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		876C2535959983BD975CD41827C4F5EC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D10C349948092D1F62778E387B6BE20 /* Pods-BEKCurveTabbar_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9D10C349948092D1F62778E387B6BE20 /* Pods-BEKCurveTabbar_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CB8955C42D01DD64F2E7701D8A3C9FEE /* Pods-BEKCurveTabbar_Tests.modulemap */,
+				A627C204C67B71954F00C0F9E6BD2F33 /* Pods-BEKCurveTabbar_Tests-acknowledgements.markdown */,
+				01D6A50D2E74A6348B6111E19C470EA3 /* Pods-BEKCurveTabbar_Tests-acknowledgements.plist */,
+				F4CDE27D4CDAB10E335A52F2204AA858 /* Pods-BEKCurveTabbar_Tests-dummy.m */,
+				66A35C3C3A233D3146D2C9F51AC58527 /* Pods-BEKCurveTabbar_Tests-frameworks.sh */,
+				DA277A1311344CBA2B942D2334A13ACE /* Pods-BEKCurveTabbar_Tests-Info.plist */,
+				0C7BBEC7AC9FC236AD8958F19EC47B7D /* Pods-BEKCurveTabbar_Tests-umbrella.h */,
+				8CCA0986DA9F65F94EA13A55B7A2D710 /* Pods-BEKCurveTabbar_Tests.debug.xcconfig */,
+				FB28905D4C98512786C956C52C4CAB47 /* Pods-BEKCurveTabbar_Tests.release.xcconfig */,
+			);
+			name = "Pods-BEKCurveTabbar_Tests";
+			path = "Target Support Files/Pods-BEKCurveTabbar_Tests";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				4561FA8BA66F28DBB4380E0F23F4A8A9 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				63A8C3C9A0DB69A3904A23A00A42FA74 /* Products */,
+				876C2535959983BD975CD41827C4F5EC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB22708F29F5DEBBAB7E0C3AB8803A08 /* BEKCurveTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				205D994023069C8ECE665027194B8ED9 /* Pod */,
+				5A8653A472AFBBBB085733092B84D592 /* Support Files */,
+			);
+			name = BEKCurveTabbar;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0C8694D13C5A25ADCB5D50F5CDE9873F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD93FBB9557E1FEA1D2189BF79005778 /* Pods-BEKCurveTabbar_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EA87AAD0B4D2159DD7D89483AE61F4F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A133B11954A838442BD71AA4807843 /* BEKCurveTabbar-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		28DBC6BD6A2C596C26C45F0D7848A9D9 /* BEKCurveTabbar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E315D5CCE1EB06789CC67E491490006 /* Build configuration list for PBXNativeTarget "BEKCurveTabbar" */;
+			buildPhases = (
+				8EA87AAD0B4D2159DD7D89483AE61F4F /* Headers */,
+				16737DE18F8FA4143B1DB8182A8CA93A /* Sources */,
+				32F67309810DE923BCA6C01D57FA5989 /* Frameworks */,
+				08741EA3064EFA00880246E8969F5C62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BEKCurveTabbar;
+			productName = BEKCurveTabbar;
+			productReference = B3C9B3E3947ABA80CCF9C596B3F7A6F4 /* BEKCurveTabbar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F8F231C3FFC0F83D43A26A0A32B13BAE /* Pods-BEKCurveTabbar_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D795ABA5DF298C1346FE4EF86315F611 /* Build configuration list for PBXNativeTarget "Pods-BEKCurveTabbar_Tests" */;
+			buildPhases = (
+				0C8694D13C5A25ADCB5D50F5CDE9873F /* Headers */,
+				BDE9C45103B3AD35D3F288919CA675CF /* Sources */,
+				6305261DEDA1BBF1D83CBA2FB4B45A61 /* Frameworks */,
+				77B872DB3A095D7E24794078753543ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEB1A9F9788A3CA90042D38E696E7FF9 /* PBXTargetDependency */,
+			);
+			name = "Pods-BEKCurveTabbar_Tests";
+			productName = "Pods-BEKCurveTabbar_Tests";
+			productReference = 455A2DADB8B4B01C54B535A480C7B1ED /* Pods_BEKCurveTabbar_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					28DBC6BD6A2C596C26C45F0D7848A9D9 = {
+						LastSwiftMigration = 1130;
+					};
+				};
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 63A8C3C9A0DB69A3904A23A00A42FA74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28DBC6BD6A2C596C26C45F0D7848A9D9 /* BEKCurveTabbar */,
+				F8F231C3FFC0F83D43A26A0A32B13BAE /* Pods-BEKCurveTabbar_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08741EA3064EFA00880246E8969F5C62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77B872DB3A095D7E24794078753543ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16737DE18F8FA4143B1DB8182A8CA93A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1346ADA523AE6BB700EF00B5 /* BEKCurveTabbar.swift in Sources */,
+				066506CF223B6A80609E22E673198598 /* BEKCurveTabbar-dummy.m in Sources */,
+				1346ADA623AE6BB700EF00B5 /* TabbarHeightRatios.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDE9C45103B3AD35D3F288919CA675CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FDCCD562F183A02A582109A838335BF /* Pods-BEKCurveTabbar_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEB1A9F9788A3CA90042D38E696E7FF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BEKCurveTabbar;
+			target = 28DBC6BD6A2C596C26C45F0D7848A9D9 /* BEKCurveTabbar */;
+			targetProxy = A06B61E378244942F7320246D4A9073A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3327E755B6A01B11F64F13B44ACA6F15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB28905D4C98512786C956C52C4CAB47 /* Pods-BEKCurveTabbar_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BEKCurveTabbar_Tests/Pods-BEKCurveTabbar_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BEKCurveTabbar_Tests/Pods-BEKCurveTabbar_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A37250A2C3481B88C875909169BF1C53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CCA0986DA9F65F94EA13A55B7A2D710 /* Pods-BEKCurveTabbar_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BEKCurveTabbar_Tests/Pods-BEKCurveTabbar_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BEKCurveTabbar_Tests/Pods-BEKCurveTabbar_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B0087CB4594321EF41619F3181FE120E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DF86D7BEA019614F6541E4F0BA33A29F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDA2F1483858BC5D5FC2684B1057079B /* BEKCurveTabbar.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BEKCurveTabbar/BEKCurveTabbar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BEKCurveTabbar/BEKCurveTabbar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BEKCurveTabbar/BEKCurveTabbar.modulemap";
+				PRODUCT_MODULE_NAME = BEKCurveTabbar;
+				PRODUCT_NAME = BEKCurveTabbar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E689C1008B59FFC7C9571D44119D4F1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDA2F1483858BC5D5FC2684B1057079B /* BEKCurveTabbar.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BEKCurveTabbar/BEKCurveTabbar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BEKCurveTabbar/BEKCurveTabbar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BEKCurveTabbar/BEKCurveTabbar.modulemap";
+				PRODUCT_MODULE_NAME = BEKCurveTabbar;
+				PRODUCT_NAME = BEKCurveTabbar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E315D5CCE1EB06789CC67E491490006 /* Build configuration list for PBXNativeTarget "BEKCurveTabbar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E689C1008B59FFC7C9571D44119D4F1B /* Debug */,
+				DF86D7BEA019614F6541E4F0BA33A29F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
+				B0087CB4594321EF41619F3181FE120E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D795ABA5DF298C1346FE4EF86315F611 /* Build configuration list for PBXNativeTarget "Pods-BEKCurveTabbar_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A37250A2C3481B88C875909169BF1C53 /* Debug */,
+				3327E755B6A01B11F64F13B44ACA6F15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

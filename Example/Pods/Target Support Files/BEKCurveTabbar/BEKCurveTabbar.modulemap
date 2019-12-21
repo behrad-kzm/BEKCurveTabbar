@@ -1,0 +1,6 @@
+framework module BEKCurveTabbar {
+  umbrella header "BEKCurveTabbar-umbrella.h"
+
+  export *
+  module * { export * }
+}

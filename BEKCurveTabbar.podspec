@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'BEKCurveTabbar'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of BEKCurveTabbar.'
+  s.summary          = 'A Full Customizable Tabbar with IBInspectables.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,17 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+                        A fun replacement for UITabbar. The Component uses bezier paths.
                        DESC
 
   s.homepage         = 'https://github.com/behrad-kzm/BEKCurveTabbar'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+#   s.screenshots     = 'https://github.com/behrad-kzm/BEKCurveTabbar/blob/master/Preview.png', 'https://github.com/behrad-kzm/BEKCurveTabbar/blob/master/Preview2.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'behrad-kzm' => 'kazemi.behrad@golrang.com' }
+  s.author           = { 'Behrad Kazemi' => 'Behrad.kzm@gmail.com' }
   s.source           = { :git => 'https://github.com/behrad-kzm/BEKCurveTabbar.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  s.social_media_url = 'https://web.telegram.org/#/im?p=@berad'
+  s.swift_versions = '5.0'
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'BEKCurveTabbar/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'BEKCurveTabbar' => ['BEKCurveTabbar/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

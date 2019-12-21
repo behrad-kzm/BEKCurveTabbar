@@ -1,0 +1,16 @@
+PODS:
+  - BEKCurveTabbar (0.1.0)
+
+DEPENDENCIES:
+  - BEKCurveTabbar (from `../`)
+
+EXTERNAL SOURCES:
+  BEKCurveTabbar:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BEKCurveTabbar: 35c11bd83b45d0d8033948a61307ada0f0106967
+
+PODFILE CHECKSUM: 54602ba57c86b02cd653d37b68341c1114c38424
+
+COCOAPODS: 1.8.4

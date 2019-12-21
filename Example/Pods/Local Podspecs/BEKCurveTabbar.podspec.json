@@ -1,0 +1,22 @@
+{
+  "name": "BEKCurveTabbar",
+  "version": "0.1.0",
+  "summary": "A short description of BEKCurveTabbar.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/behrad-kzm/BEKCurveTabbar",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "behrad-kzm": "kazemi.behrad@golrang.com"
+  },
+  "source": {
+    "git": "https://github.com/behrad-kzm/BEKCurveTabbar.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "BEKCurveTabbar/Classes/**/*"
+}
