@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/behrad-kzm/BEKCurveTabbar.git', :tag => s.version.to_s }
   s.social_media_url = 'https://web.telegram.org/#/im?p=@berad'
   s.swift_versions = '5.0'
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'BEKCurveTabbar/Classes/**/*'
 end
