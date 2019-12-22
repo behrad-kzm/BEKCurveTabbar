@@ -66,7 +66,7 @@ public class BEKCurveTabbar: UITabBar {
      Change the circle view behind selected tab icon.
      - Default is Blue
      */
-    @IBInspectable public var selectedColor: UIColor = .systemBlue  {
+    @IBInspectable public var selectedColor: UIColor = .blue  {
         didSet {
             layoutIfNeeded()
         }
