@@ -18,7 +18,9 @@ Set your 'tabbar' to BEKCurveTabbar indide interface builder or initiate it prog
 
 ```swift
 ...
+
 tabbarController.tabbar = BEKCurveTabar()
+
 ...
 
 ```
