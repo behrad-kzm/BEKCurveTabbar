@@ -15,7 +15,6 @@ public class BEKCurveTabbar: UITabBar {
     
     /**
         HeightRatio will cross with screen height to calculate tabbar height.
-     
         - Default value will change in different enviroments iphone, iphoneX, iPad, etc.
     */
     @IBInspectable public var heightRatio: CGFloat = CGFloat(TabbarHeightRatios.bestSize.rawValue) {
@@ -26,6 +25,7 @@ public class BEKCurveTabbar: UITabBar {
     
     /**
         Margin is the space from the tabbar to Left Right and Bottom edge of screen.
+        - Default is 12.0
     */
     @IBInspectable public var margin: CGFloat = 12.0 {
         didSet {
@@ -35,6 +35,7 @@ public class BEKCurveTabbar: UITabBar {
     
     /**
         CornerRadius  for Tabbar container.
+        - Default is 16.0
     */
     @IBInspectable public var cornerRadious: CGFloat = 16.0 {
         didSet {
@@ -44,6 +45,7 @@ public class BEKCurveTabbar: UITabBar {
     
     /**
         Change the circle view behind selected tab icon.
+        - Default is Blue
     */
     @IBInspectable public var selectedColor: UIColor = .blue  {
         didSet {
@@ -53,6 +55,7 @@ public class BEKCurveTabbar: UITabBar {
     
     /**
         Change the Background color of Tabbar curve container.
+        - Default is white
     */
     @IBInspectable public var tabbarColor: UIColor = .white  {
         didSet {
@@ -62,6 +65,7 @@ public class BEKCurveTabbar: UITabBar {
     
     /**
         textColor of titleLabel for not selected Tabs.
+        - Default is Blue
     */
     @IBInspectable public var textColor: UIColor = .blue  {
         didSet {
@@ -116,8 +120,8 @@ public class BEKCurveTabbar: UITabBar {
     @IBInspectable public var hidesWhenDeseleted: Bool = true
     
     /**
-       hidesWhenDeseleted will hide other labels that are not selected
-        - Default is true.
+       font of titles.
+        - Default is 11.
     */
     public var font: UIFont = .systemFont(ofSize: 11)  {
         didSet {
@@ -125,17 +129,28 @@ public class BEKCurveTabbar: UITabBar {
         }
     }
     
+    /**
+       font of titles when they are in selection mode.
+        - Default is 11.
+    */
     public var selectedFont: UIFont = .systemFont(ofSize: 11)  {
         didSet {
             layoutIfNeeded()
         }
     }
-    
+    /**
+       shadow color of container view..
+        - Default is black.
+    */
     @IBInspectable public var shadowColor: UIColor = .black  {
         didSet {
             layoutIfNeeded()
         }
     }
+    /**
+       shadow radius of container view .
+        - Default is 30.0.
+    */
     @IBInspectable public var shadowRadius: CGFloat = 30.0  {
         didSet {
             layoutIfNeeded()
@@ -172,7 +187,6 @@ public class BEKCurveTabbar: UITabBar {
         let height = ratioConvertion > 0 && heightRatio < 1.0 ? ratioConvertion : UIScreen.main.bounds.height * CGFloat(TabbarHeightRatios.bestSize.rawValue)
         let insideRectHeight = (height - 2 * cornerRadious) > 0 ? (height - 2 * cornerRadious) : 0.0
         let realHeight = insideRectHeight + 2 * cornerRadious + 2 * margin
-        
         var sizeThatFits = super.sizeThatFits(size)
         sizeThatFits.height = realHeight
         return sizeThatFits
@@ -186,7 +200,6 @@ public class BEKCurveTabbar: UITabBar {
         let height = ratioConvertion > 0 && heightRatio < 1.0 ? ratioConvertion : UIScreen.main.bounds.height * CGFloat(TabbarHeightRatios.bestSize.rawValue)
         let insideRectHeight = (height - 2 * cornerRadious) > 0 ? (height - 2 * cornerRadious) : 0.0
         let realHeight = insideRectHeight + 2 * cornerRadious
-        //        let newFrame = CGRect(
         
         //Corners
         let firstCorner = CGPoint(x: margin, y: margin)

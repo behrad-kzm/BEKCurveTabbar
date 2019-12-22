@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		066506CF223B6A80609E22E673198598 /* BEKCurveTabbar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0AEF9894EA54B363CB64934E29D1B3 /* BEKCurveTabbar-dummy.m */; };
-		1346ADA523AE6BB700EF00B5 /* BEKCurveTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1346ADA323AE6BB700EF00B5 /* BEKCurveTabbar.swift */; };
-		1346ADA623AE6BB700EF00B5 /* TabbarHeightRatios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1346ADA423AE6BB700EF00B5 /* TabbarHeightRatios.swift */; };
+		131BD4C523AF392700A4303E /* TabbarHeightRatios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131BD4C323AF392700A4303E /* TabbarHeightRatios.swift */; };
+		131BD4C623AF392700A4303E /* BEKCurveTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131BD4C423AF392700A4303E /* BEKCurveTabbar.swift */; };
 		1FDCCD562F183A02A582109A838335BF /* Pods-BEKCurveTabbar_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CDE27D4CDAB10E335A52F2204AA858 /* Pods-BEKCurveTabbar_Tests-dummy.m */; };
 		43A133B11954A838442BD71AA4807843 /* BEKCurveTabbar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13441DCB45F33BEA0A991E3661BA6D86 /* BEKCurveTabbar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7BDA05F0E9C5C061BEB1215ED4FC3A25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
@@ -30,9 +30,9 @@
 /* Begin PBXFileReference section */
 		01D6A50D2E74A6348B6111E19C470EA3 /* Pods-BEKCurveTabbar_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BEKCurveTabbar_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		0C7BBEC7AC9FC236AD8958F19EC47B7D /* Pods-BEKCurveTabbar_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BEKCurveTabbar_Tests-umbrella.h"; sourceTree = "<group>"; };
+		131BD4C323AF392700A4303E /* TabbarHeightRatios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarHeightRatios.swift; sourceTree = "<group>"; };
+		131BD4C423AF392700A4303E /* BEKCurveTabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BEKCurveTabbar.swift; sourceTree = "<group>"; };
 		13441DCB45F33BEA0A991E3661BA6D86 /* BEKCurveTabbar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BEKCurveTabbar-umbrella.h"; sourceTree = "<group>"; };
-		1346ADA323AE6BB700EF00B5 /* BEKCurveTabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BEKCurveTabbar.swift; sourceTree = "<group>"; };
-		1346ADA423AE6BB700EF00B5 /* TabbarHeightRatios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarHeightRatios.swift; sourceTree = "<group>"; };
 		29AE98256D7A37573666CCD05F5EA3A3 /* BEKCurveTabbar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BEKCurveTabbar-Info.plist"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		36A2F73164EA705CB8AA84D88580918C /* BEKCurveTabbar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BEKCurveTabbar.modulemap; sourceTree = "<group>"; };
@@ -77,10 +77,11 @@
 		1346ADA223AE6B6D00EF00B5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1346ADA323AE6BB700EF00B5 /* BEKCurveTabbar.swift */,
-				1346ADA423AE6BB700EF00B5 /* TabbarHeightRatios.swift */,
+				131BD4C423AF392700A4303E /* BEKCurveTabbar.swift */,
+				131BD4C323AF392700A4303E /* TabbarHeightRatios.swift */,
 			);
 			name = Classes;
+			path = BEKCurveTabbar/Classes;
 			sourceTree = "<group>";
 		};
 		205D994023069C8ECE665027194B8ED9 /* Pod */ = {
@@ -301,9 +302,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1346ADA523AE6BB700EF00B5 /* BEKCurveTabbar.swift in Sources */,
+				131BD4C523AF392700A4303E /* TabbarHeightRatios.swift in Sources */,
+				131BD4C623AF392700A4303E /* BEKCurveTabbar.swift in Sources */,
 				066506CF223B6A80609E22E673198598 /* BEKCurveTabbar-dummy.m in Sources */,
-				1346ADA623AE6BB700EF00B5 /* TabbarHeightRatios.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
