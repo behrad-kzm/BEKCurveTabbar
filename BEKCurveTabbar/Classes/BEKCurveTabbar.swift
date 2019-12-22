@@ -35,7 +35,7 @@ public class BEKCurveTabbar: UITabBar {
     
     /**
      CornerRadius  for Tabbar container.
-     - Default is 16.0
+     - Default value will change in different enviroments iphone, iphoneX, iPad, etc.
      */
     @IBInspectable public var cornerRadious: CGFloat = TabbarHeightRatios.bestSize.cornerRadius(){
         didSet {
@@ -44,8 +44,17 @@ public class BEKCurveTabbar: UITabBar {
     }
     
     /**
+     animationDuration  can change every animating time entire component.
+     - Default is 0.3
+     */
+    @IBInspectable public var animationDuration: CFTimeInterval = 0.3{
+        didSet {
+            layoutIfNeeded()
+        }
+    }
+    /**
      circleRadius  for Tabbar selected item background.
-     - Default is 42.0
+     - Default value will change in different enviroments iphone, iphoneX, iPad, etc.
      */
     @IBInspectable public var circleRadius: CGFloat = TabbarHeightRatios.bestSize.circleRadius(){
         didSet {
@@ -57,7 +66,7 @@ public class BEKCurveTabbar: UITabBar {
      Change the circle view behind selected tab icon.
      - Default is Blue
      */
-    @IBInspectable public var selectedColor: UIColor = .blue  {
+    @IBInspectable public var selectedColor: UIColor = .systemBlue  {
         didSet {
             layoutIfNeeded()
         }
@@ -127,7 +136,15 @@ public class BEKCurveTabbar: UITabBar {
      hidesWhenDeseleted will hide other labels that are not selected
      - Default is true.
      */
-    @IBInspectable public var hidesWhenDeseleted: Bool = true
+    @IBInspectable public var showTitle: Bool = true
+    
+    
+    /**
+     animated will stop animation of changing circle behind selected tab.
+     - Default is true.
+     */
+    @IBInspectable public var animated: Bool = true
+    
     
     /**
      font of titles.
@@ -152,7 +169,7 @@ public class BEKCurveTabbar: UITabBar {
      shadow color of container view..
      - Default is black.
      */
-    @IBInspectable public var shadowColor: UIColor = .black  {
+    @IBInspectable public var shadowColor: UIColor = UIColor(white: 0, alpha: 0.2)  {
         didSet {
             layoutIfNeeded()
         }
@@ -179,6 +196,8 @@ public class BEKCurveTabbar: UITabBar {
         shapeLayer.lineWidth = borderWidth
         shapeLayer.shadowColor = shadowColor.cgColor
         shapeLayer.shadowRadius = shadowRadius
+        shapeLayer.shadowOffset = .zero
+        shapeLayer.shadowOpacity = 1.0
         if let oldShapeLayer = self.shapeLayer {
             layer.replaceSublayer(oldShapeLayer, with: shapeLayer)
         } else {
@@ -197,8 +216,6 @@ public class BEKCurveTabbar: UITabBar {
             circleSelectionView.strokeColor = borderColor.cgColor
             circleSelectionView.fillColor = selectedColor.cgColor
             circleSelectionView.lineWidth = borderWidth
-            circleSelectionView.shadowColor = shadowColor.cgColor
-            circleSelectionView.shadowRadius = shadowRadius
         }
         if let oldCircle = self.circleLayer {
             layer.replaceSublayer(oldCircle, with: circleSelectionView)
@@ -220,17 +237,25 @@ public class BEKCurveTabbar: UITabBar {
         let realHeight = insideRectHeight + 2 * cornerRadious + 2 * margin
         var sizeThatFits = super.sizeThatFits(size)
         sizeThatFits.height = realHeight
-
         return sizeThatFits
     }
     override public var selectedItem: UITabBarItem?{
         didSet{
-            if let imageView = (selectedItem?.value(forKey: "view") as? UIView) {
-                circleLayer?.position = imageView.frame.origin
+            if showTitle {
+                items?.forEach({ (item) in
+                    hideLabel(barItem: item, hidden: showTitle)
+                })
+            }
+            if let itemView = (selectedItem?.value(forKey: "view") as? UIView) {
+                CATransaction.begin()
+                CATransaction.setAnimationDuration(animated ? animationDuration : 0.0)
+                circleLayer?.position = itemView.frame.origin
+                CATransaction.commit()
             }
         }
     }
     override public func layoutIfNeeded() {
+        super.layoutIfNeeded()
         items?.forEach({ (item) in
             if let imageView = (item.value(forKey: "view") as? UIView)?.subviews.first {
                 let iconFrame = imageView.frame
@@ -241,16 +266,15 @@ public class BEKCurveTabbar: UITabBar {
             }else{
                 item.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -margin + labelOffset)
             }
-            item.imageInsets = UIEdgeInsets(top: margin, left: 0, bottom: 0, right: 0)//todo
             item.setTitleTextAttributes([NSAttributedString.Key.font: font], for: .normal)
             item.setTitleTextAttributes([NSAttributedString.Key.font: selectedFont,NSAttributedString.Key.foregroundColor: selectedTextColor], for: .selected)
             item.setTitleTextAttributes([NSAttributedString.Key.font: selectedFont,NSAttributedString.Key.foregroundColor: textColor], for: .normal)
+            hideLabel(barItem: item, hidden: showTitle)
         })
         unselectedItemTintColor = selectedColor
         tintColor = barTintColor
-        
-        super.layoutIfNeeded()
     }
+
     func createPath() -> CGPath {
         
         //Properties
@@ -289,5 +313,13 @@ public class BEKCurveTabbar: UITabBar {
         path.close()
         
         return path.cgPath
+    }
+    private func hideLabel(barItem: UITabBarItem, hidden: Bool) {
+        
+        if let itemView = (barItem.value(forKey: "view") as? UIView) {
+            if let titleLabel = itemView.subviews.last {
+                titleLabel.isHidden = hidden
+            }
+        }
     }
 }
