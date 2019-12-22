@@ -9,10 +9,10 @@
 import Foundation
 import UIKit
 enum TabbarHeightRatios: Float {
-    case iPhone = 0.15
-    case iPhoneX = 0.12
+    case iPhone = 0.1
+    case iPhoneX = 0.101
     case iPad = 0.09
-    case notDetermined = -1.0
+    case notDetermined = 0.2
     static let bestSize: TabbarHeightRatios = {
         switch UIDevice.current.userInterfaceIdiom {
         case .phone:
@@ -29,11 +29,22 @@ enum TabbarHeightRatios: Float {
                 default:
                     return .iPhone
                 }
-            break
         case .pad:
             return .iPad
         default:
             return .notDetermined
         }
     }()
+    
+    func circleRadius() -> CGFloat{
+        return self == TabbarHeightRatios.iPhoneX ? 32 : 0
+    }
+    
+    func margin() -> CGFloat{
+        return self == TabbarHeightRatios.iPhoneX ? 16 : 0
+    }
+    func cornerRadius() -> CGFloat{
+        return self == TabbarHeightRatios.iPhoneX ? 46 : 0
+    }
+
 }
