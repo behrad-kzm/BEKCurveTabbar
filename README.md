@@ -12,11 +12,14 @@ A fun replacement for UITabbar. The Component uses bezier paths.
 ## Example
 
 __usage:__
+
+You can change appearance using xcode interface builder or use default config (recommended).
+Set your 'tabbar' to BEKCurveTabbar indide interface builder or initiate it programatically with easiest way as possible like this:
+
 ```swift
 ...
 
-controller.tabbar = BEKCurveTabar()
-
+tabbarController.tabbar = BEKCurveTabar()
 
 ...
 
@@ -25,7 +28,7 @@ controller.tabbar = BEKCurveTabar()
 ## Installation
 ```swift
 
-pod 'BEKCurveTabbar'
+  pod 'BEKCurveTabbar', :git => 'https://github.com/behrad-kzm/BEKCurveTabbar.git'
 
 ```
 
