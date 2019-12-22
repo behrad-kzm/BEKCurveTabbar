@@ -12,15 +12,15 @@ A fun replacement for UITabbar. The Component uses bezier paths.
 ## Example
 
 __usage:__
-easiest way as possible like this:
+
+You can change appearance using xcode interface builder or use default config (recommended).
+Set your 'tabbar' to BEKCurveTabbar indide interface builder or initiate it programatically with easiest way as possible like this:
+
 ```swift
 ...
-
 tabbarController.tabbar = BEKCurveTabar()
-
 ...
 
-You can change appearance using xcode interface builder or use default config (recommended)
 ```
 
 ## Installation
