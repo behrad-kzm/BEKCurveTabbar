@@ -171,7 +171,7 @@ public class BEKCurveTabbar: UITabBar {
     private var circleLayer: CALayer?
     
     //MARK:- Methodes
-    private func addShape() {
+    private func addBackgroundShape() {
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = createPath()
         shapeLayer.strokeColor = borderColor.cgColor
@@ -179,6 +179,14 @@ public class BEKCurveTabbar: UITabBar {
         shapeLayer.lineWidth = borderWidth
         shapeLayer.shadowColor = shadowColor.cgColor
         shapeLayer.shadowRadius = shadowRadius
+        if let oldShapeLayer = self.shapeLayer {
+            layer.replaceSublayer(oldShapeLayer, with: shapeLayer)
+        } else {
+            layer.insertSublayer(shapeLayer, at: 0)
+        }
+        self.shapeLayer = shapeLayer
+    }
+    private func addCircleShape(){
         let circleSelectionView = CAShapeLayer()
         if let imageView = (selectedItem?.value(forKey: "view") as? UIView)?.subviews.first {
             var center = imageView.center
@@ -187,24 +195,22 @@ public class BEKCurveTabbar: UITabBar {
             let radius = circleRadius
             circleSelectionView.path = UIBezierPath(arcCenter: center, radius: radius, startAngle: CGFloat(0), endAngle:CGFloat(.pi * 2.0), clockwise: true).cgPath
             circleSelectionView.strokeColor = borderColor.cgColor
-            circleSelectionView.fillColor = UIColor.red.cgColor
+            circleSelectionView.fillColor = selectedColor.cgColor
             circleSelectionView.lineWidth = borderWidth
             circleSelectionView.shadowColor = shadowColor.cgColor
             circleSelectionView.shadowRadius = shadowRadius
         }
-        if let oldShapeLayer = self.shapeLayer, let oldCircle = self.circleLayer {
-            self.layer.replaceSublayer(oldShapeLayer, with: shapeLayer)
-            self.layer.replaceSublayer(oldCircle, with: circleSelectionView)
+        if let oldCircle = self.circleLayer {
+            layer.replaceSublayer(oldCircle, with: circleSelectionView)
         } else {
-            self.layer.insertSublayer(shapeLayer, at: 0)
-            self.layer.insertSublayer(circleSelectionView, at: 1)
+            layer.insertSublayer(circleSelectionView, at: 1)
         }
-        self.shapeLayer = shapeLayer
-        self.circleLayer = circleSelectionView
+        circleLayer = circleSelectionView
     }
     
     override public func draw(_ rect: CGRect) {
-        self.addShape()
+        addBackgroundShape()
+        addCircleShape()
     }
     
     override public func sizeThatFits(_ size: CGSize) -> CGSize {
@@ -214,7 +220,15 @@ public class BEKCurveTabbar: UITabBar {
         let realHeight = insideRectHeight + 2 * cornerRadious + 2 * margin
         var sizeThatFits = super.sizeThatFits(size)
         sizeThatFits.height = realHeight
+
         return sizeThatFits
+    }
+    override public var selectedItem: UITabBarItem?{
+        didSet{
+            if let imageView = (selectedItem?.value(forKey: "view") as? UIView) {
+                circleLayer?.position = imageView.frame.origin
+            }
+        }
     }
     override public func layoutIfNeeded() {
         items?.forEach({ (item) in
@@ -231,11 +245,10 @@ public class BEKCurveTabbar: UITabBar {
             item.setTitleTextAttributes([NSAttributedString.Key.font: font], for: .normal)
             item.setTitleTextAttributes([NSAttributedString.Key.font: selectedFont,NSAttributedString.Key.foregroundColor: selectedTextColor], for: .selected)
             item.setTitleTextAttributes([NSAttributedString.Key.font: selectedFont,NSAttributedString.Key.foregroundColor: textColor], for: .normal)
-            
-            
         })
         unselectedItemTintColor = selectedColor
         tintColor = barTintColor
+        
         super.layoutIfNeeded()
     }
     func createPath() -> CGPath {
