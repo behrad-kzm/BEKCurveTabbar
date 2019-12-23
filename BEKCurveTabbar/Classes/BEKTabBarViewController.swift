@@ -13,7 +13,8 @@ public class BEKTabBarViewController: UITabBarController {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         object_setClass(self.tabBar, BEKCurveTabbar.self)
         if let customBar = (self.tabBar as? BEKCurveTabbar){
-            customBar.setup()
+            self.tabBar.layoutSubviews()
+            customBar.draw(self.tabBar.bounds)
         }
         
     }
