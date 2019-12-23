@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-enum TabbarHeightRatios: Float {
+public enum TabbarHeightRatios: Float {
     case iPhone = 0.12
     case iPhoneX = 0.101
     case iPad = 0.09
