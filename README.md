@@ -8,7 +8,7 @@ Full Customizable Tabbar with IBInspectables
 
 A fun replacement for UITabbar. The Component uses bezier paths.
 ## Demo
-<img src="https://github.com/behrad-kzm/BEKCurveTabbar/blob/master/Preview.png" height="600"><img src="https://github.com/behrad-kzm/BEKCurveTabbar/blob/master/Preview2.png" height="600"><img src="https://github.com/behrad-kzm/BEKCurveTabbar/blob/master/ezgif-4-f5337c3146e3.gif" height="600">
+<img src="https://github.com/behrad-kzm/BEKCurveTabbar/blob/master/Preview.png" height="600"><img src="https://github.com/behrad-kzm/BEKCurveTabbar/blob/master/Preview2.png" height="600"><img src="https://github.com/behrad-kzm/BEKCurveTabbar/blob/master/Preview3.gif" height="600">
 
 ## Example
 
