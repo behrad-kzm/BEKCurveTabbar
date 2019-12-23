@@ -1,3 +1,4 @@
+
 # BEKCurveTabbar
 Full Customizable Tabbar with IBInspectables
 <img src="https://github.com/behrad-kzm/BEKCurveTabbar/blob/master/Header.png">
@@ -20,7 +21,11 @@ Set your 'tabbar' to BEKCurveTabbar indide interface builder or initiate it prog
 ```swift
 ...
 
-tabbarController.tabbar = BEKCurveTabar()
+class MainTabbarController: UITabBarController {
+    override var tabBar: BEKCurveTabbar{
+        return BEKCurveTabbar()
+    }
+}    
 
 ...
 
@@ -36,7 +41,7 @@ tabbarController.tabbar = BEKCurveTabar()
 
 ## Author
 Behrad Kazemi, Behradkzm@gmail.com, bekapps.com
-
+<a href="https://bekapps.com"> Visit Web Site </a>
 ## License
 
 BEKCurveTabbar is available under the MIT license. See the LICENSE file for more info.
