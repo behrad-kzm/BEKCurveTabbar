@@ -188,6 +188,12 @@ public class BEKCurveTabbar: UITabBar {
     private var circleLayer: CALayer?
     
     //MARK:- Methodes
+    public func setup(){
+        
+        addBackgroundShape()
+        addCircleShape()
+        layoutIfNeeded()
+    }
     private func addBackgroundShape() {
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = createPath()
