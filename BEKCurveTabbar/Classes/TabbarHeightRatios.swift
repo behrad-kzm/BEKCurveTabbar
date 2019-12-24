@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 public enum TabbarHeightRatios: Float {
     case iPhone = 0.12
-    case iPhoneX = 0.101
+    case iPhoneX = 0.1201
     case iPad = 0.09
     case notDetermined = 0.2
     static let bestSize: TabbarHeightRatios = {
@@ -43,6 +43,11 @@ public enum TabbarHeightRatios: Float {
     func margin() -> CGFloat{
         return self == TabbarHeightRatios.iPhoneX ? 10 : 5
     }
+    
+    func containerInsets() -> UIEdgeInsets{
+        return self == TabbarHeightRatios.iPhoneX ? UIEdgeInsets(top: -10, left: 10, bottom: 32, right: 10) : UIEdgeInsets(top: -10, left: 0, bottom: -46, right: 0)
+    }
+    
     func cornerRadius() -> CGFloat{
         return self == TabbarHeightRatios.iPhoneX ? 46 : 10
     }
