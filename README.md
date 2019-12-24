@@ -36,9 +36,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         firstViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
         let secondViewController = UIViewController()
         firstViewController.view.backgroundColor = .white
-        secondViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
+        secondViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 1)
         let thirdViewController = UIViewController()
-        thirdViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
+        thirdViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 3)
         let tabBarViewController = BEKCurveTabbarController.instantiate()
         tabBarViewController.setViewControllers([firstViewController, secondViewController, thirdViewController], animated: true)
         
