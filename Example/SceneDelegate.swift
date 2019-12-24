@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import BEKCurveTabbar
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
