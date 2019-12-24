@@ -16,18 +16,41 @@ A fun replacement for UITabbar. The Component uses bezier paths.
 __usage:__
 
 You can change appearance using xcode interface builder or use default config (recommended).
-Set your 'tabbar' to BEKCurveTabbar indide interface builder or initiate it programatically with easiest way as possible like this:
+```swift BEKCurveTabbarController``` can setup with your custom ViewModel that confirms the ```swift BEKTabBarViewModelType``` protocol.
+you can set your 'tabbar' to BEKCurveTabbar indide interface builder or initiate it programatically with easiest way as possible like this:
+__Note:__ BEKCurveTabbarController initiates with ```swift .initiate()```
 
 ```swift
-...
 
-class MainTabbarController: UITabBarController {
-    override var tabBar: BEKCurveTabbar{
-        return BEKCurveTabbar()
+import BEKCurveTabbar
+class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+
+    var window: UIWindow?
+    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
+        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
+        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        
+        let firstViewController = UIViewController()
+        firstViewController.view.backgroundColor = .red
+        firstViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
+        let secondViewController = UIViewController()
+        firstViewController.view.backgroundColor = .white
+        secondViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
+        let thirdViewController = UIViewController()
+        thirdViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
+        let tabBarViewController = BEKCurveTabbarController.instantiate()
+        tabBarViewController.setViewControllers([firstViewController, secondViewController, thirdViewController], animated: true)
+        
+         guard let windowScene = (scene as? UIWindowScene) else { return }
+         self.window = UIWindow(frame: windowScene.coordinateSpace.bounds)
+        //Make sure to do this else you won't get
+        //the windowScene object using UIApplication.shared.connectedScenes
+         self.window?.windowScene = windowScene
+        window?.rootViewController = tabBarViewController
+        window?.makeKeyAndVisible()
     }
-}    
-
-...
+}  
 
 ```
 
