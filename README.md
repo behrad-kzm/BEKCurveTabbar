@@ -16,9 +16,9 @@ A fun replacement for UITabbar. The Component uses bezier paths.
 __usage:__
 
 You can change appearance using xcode interface builder or use default config (recommended).
-```swift BEKCurveTabbarController``` can setup with your custom ViewModel that confirms the ```swift BEKTabBarViewModelType``` protocol.
+```BEKCurveTabbarController``` can setup with your custom ViewModel that confirms the ```BEKTabBarViewModelType``` protocol.
 you can set your 'tabbar' to BEKCurveTabbar indide interface builder or initiate it programatically with easiest way as possible like this:
-__Note:__ BEKCurveTabbarController initiates with ```swift .initiate()```
+__Note:__ ```BEKCurveTabbarController``` initiates with ```.initiate()```
 
 ```swift
 
