@@ -553,6 +553,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 0.2.0;
 				MODULEMAP_FILE = "Target Support Files/BEKCurveTabbar/BEKCurveTabbar.modulemap";
 				PRODUCT_MODULE_NAME = BEKCurveTabbar;
 				PRODUCT_NAME = BEKCurveTabbar;
@@ -586,6 +587,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 0.2.0;
 				MODULEMAP_FILE = "Target Support Files/BEKCurveTabbar/BEKCurveTabbar.modulemap";
 				PRODUCT_MODULE_NAME = BEKCurveTabbar;
 				PRODUCT_NAME = BEKCurveTabbar;
