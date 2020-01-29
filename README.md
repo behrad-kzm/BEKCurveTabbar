@@ -1,7 +1,7 @@
 
 # BEKCurveTabbar
 Full Customizable Tabbar with IBInspectables
-<img src="https://github.com/behrad-kzm/BEKCurveTabbar/blob/master/Header.png">
+<img src="https://github.com/behrad-kzm/BEKDesing/blob/master/Images/BEKHeader.png">
 
 [![CI Status](http://img.shields.io/travis/popwarsweet/JellySlider.svg?style=flat)](https://travis-ci.org/popwarsweet/JellySlider)
 [![License](https://img.shields.io/cocoapods/l/JellySlider.svg?style=flat)](http://cocoapods.org/pods/JellySlider)
@@ -18,42 +18,95 @@ __usage:__
 You can change appearance using xcode interface builder or use default config (recommended).
 ```BEKCurveTabbarController``` can setup with your custom ViewModel that confirms the ```BEKTabBarViewModelType``` protocol.
 you can set your 'tabbar' to BEKCurveTabbar indide interface builder or initiate it programatically with easiest way as possible like this:
+
 __Note:__ ```BEKCurveTabbarController``` initiates with ```.initiate()```
 
+
+__Default Config Usage:__
+
 ```swift
-
-import BEKCurveTabbar
-class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
-    var window: UIWindow?
-    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        
+        //Initiate your viewControllers
         let firstViewController = UIViewController()
         firstViewController.view.backgroundColor = .red
         firstViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
         let secondViewController = UIViewController()
         firstViewController.view.backgroundColor = .white
-        secondViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 1)
+        secondViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
         let thirdViewController = UIViewController()
-        thirdViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 3)
-        let tabBarViewController = BEKCurveTabbarController.instantiate()
-        tabBarViewController.setViewControllers([firstViewController, secondViewController, thirdViewController], animated: true)
+        thirdViewController.view.backgroundColor = .blue
+        thirdViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 2)
         
-         guard let windowScene = (scene as? UIWindowScene) else { return }
-         self.window = UIWindow(frame: windowScene.coordinateSpace.bounds)
-        //Make sure to do this else you won't get
-        //the windowScene object using UIApplication.shared.connectedScenes
-         self.window?.windowScene = windowScene
-        window?.rootViewController = tabBarViewController
-        window?.makeKeyAndVisible()
-    }
-}  
+        //get instance of BEKCurveTabbarController
+        let tabBarViewController = BEKCurveTabbarController.instantiate()
+        
+        //set viewControllers to the tabbar
+        tabBarViewController.setViewControllers([firstViewController, secondViewController, thirdViewController], animated: true)
 
 ```
 
+
+
+__Customized Config Usage:__
+
+Create a new struct that confirms ```BEKTabBarViewModelType``` :
+
+```swift
+struct MyCustomTabBarViewModel: BEKTabBarViewModelType {
+    let heightRatio: CGFloat = CGFloat(TabbarHeightRatios.bestSize.rawValue)
+    let containerColor: UIColor = .white
+    let hideTitle: Bool = false
+    let animationDuration: CGFloat = 0.3
+    let animated: Bool = true
+    let shadowColor: UIColor = UIColor(red: 0.353, green: 0.784, blue: 1, alpha: 1.0)
+    let shadowRadius: CGFloat = 16
+    let containerBorderWidth: CGFloat = 1.0
+    let containerBorderColor: UIColor = .gray
+    let selectedTextColor: UIColor = .yellow
+    let selectedTextFont: UIFont = .systemFont(ofSize: 13)
+    let normalTextColor: UIColor = .lightGray
+    let normalTextFont: UIFont = .systemFont(ofSize: 11)
+    let topCornerRadius: CGFloat = TabbarHeightRatios.bestSize.cornerRadius()
+    let bottomCornerRadius: CGFloat = 0
+    let containerInsets: UIEdgeInsets = TabbarHeightRatios.bestSize.containerInsets()
+    let selectionCircleRadius: CGFloat = TabbarHeightRatios.bestSize.circleRadius()
+    let selectionCircleBorderWidth: CGFloat = 0.0
+    let selectionCircleBorderColor: UIColor = .clear
+    let selectionCircleBackgroundColor: UIColor = UIColor(red: 0.353, green: 0.784, blue: 1, alpha: 1.0)
+    let textOffset: CGFloat = 0
+    init() {}
+}
+
+```
+
+__Note:__ ```TabbarHeightRatios.bestSize``` provides you computed values for different iOS enviroment. (recommended)
+
+Now you just need to pass your viewModel to ```.setupViewModel(viewModel: BEKTabBarViewModelType)``` function.
+
+```swift
+        //1- Initiate your viewControllers
+        let firstViewController = UIViewController()
+        firstViewController.view.backgroundColor = .red
+        firstViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
+        let secondViewController = UIViewController()
+        firstViewController.view.backgroundColor = .white
+        secondViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
+        let thirdViewController = UIViewController()
+        thirdViewController.view.backgroundColor = .blue
+        thirdViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 2)
+        
+        //2- get instance of BEKCurveTabbarController
+        let tabBarViewController = BEKCurveTabbarController.instantiate()
+        
+        //3- Config your own TabBar ViewModel
+        let myViewModel = MyCustomTabBarViewModel()
+        
+        //4- setup TabBar Controller with you viewModel
+        tabBarViewController.setupViewModel(viewModel: myViewModel)
+        
+        //5- set viewControllers to the tabbar
+        tabBarViewController.setViewControllers([firstViewController, secondViewController, thirdViewController], animated: true)
+        return tabBarViewController
+```
 ## Installation
 ```swift
 
