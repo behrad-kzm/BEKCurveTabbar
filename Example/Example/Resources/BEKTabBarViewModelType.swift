@@ -17,7 +17,8 @@ public protocol BEKTabBarViewModelType {
     var selectedTextFont: UIFont { get }
     var normalTextColor: UIColor { get }
     var normalTextFont: UIFont { get }
-    var cornerRadius: CGFloat { get }
+    var topCornerRadius: CGFloat { get }
+    var bottomCornerRadius: CGFloat { get }
     var shadowColor: UIColor { get }
     var shadowRadius: CGFloat { get }
     var containerInsets: UIEdgeInsets { get }

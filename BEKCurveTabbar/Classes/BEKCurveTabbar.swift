@@ -46,14 +46,26 @@ public class BEKCurveTabbar: UITabBar {
     }
     
     /**
-     CornerRadius  for Tabbar container.
+     CornerRadius of top edges for Tabbar container.
      - Default value will change in different enviroments iphone, iphoneX, iPad, etc.
      */
-    @IBInspectable public var cornerRadious: CGFloat = TabbarHeightRatios.bestSize.cornerRadius(){
+    @IBInspectable public var topCornerRadious: CGFloat = TabbarHeightRatios.bestSize.cornerRadius(){
         didSet {
             layoutIfNeeded()
         }
     }
+    
+    /**
+     CornerRadius of bottom edges  for Tabbar container.
+     - Default value will change in different enviroments iphone, iphoneX, iPad, etc.
+     */
+    @IBInspectable public var bottomCornerRadious: CGFloat = TabbarHeightRatios.bestSize.cornerRadius(){
+        didSet {
+            layoutIfNeeded()
+        }
+    }
+    
+    
     
     /**
      animationDuration  can change every animating time entire component.
@@ -312,14 +324,14 @@ public class BEKCurveTabbar: UITabBar {
         let fourthCorner = CGPoint(x: bounds.width - containerInsets.right, y: containerInsets.top)
         
         //Curve Points
-        let startPoint = CGPoint(x: firstCorner.x + cornerRadious, y: firstCorner.y)
-        let firstPoint = CGPoint(x: firstCorner.x, y:  firstCorner.y + cornerRadious)
-        let secondCurvePoint1 = CGPoint(x: secondCorner.x, y: secondCorner.y - cornerRadious)
-        let secondCurvePoint2 = CGPoint(x: secondCorner.x + cornerRadious, y: secondCorner.y)
-        let thirdCurvePoint1 = CGPoint(x: thirdCorner.x - cornerRadious, y: thirdCorner.y)
-        let thirdCurvePoint2 = CGPoint(x: thirdCorner.x, y: thirdCorner.y - cornerRadious)
-        let endCurvePoint1 = CGPoint(x: fourthCorner.x, y:  fourthCorner.y + cornerRadious)
-        let endPoint = CGPoint(x: fourthCorner.x - cornerRadious, y: fourthCorner.y)
+        let startPoint = CGPoint(x: firstCorner.x + topCornerRadious, y: firstCorner.y)
+        let firstPoint = CGPoint(x: firstCorner.x, y:  firstCorner.y + topCornerRadious)
+        let secondCurvePoint1 = CGPoint(x: secondCorner.x, y: secondCorner.y - bottomCornerRadious)
+        let secondCurvePoint2 = CGPoint(x: secondCorner.x + bottomCornerRadious, y: secondCorner.y)
+        let thirdCurvePoint1 = CGPoint(x: thirdCorner.x - bottomCornerRadious, y: thirdCorner.y)
+        let thirdCurvePoint2 = CGPoint(x: thirdCorner.x, y: thirdCorner.y - bottomCornerRadious)
+        let endCurvePoint1 = CGPoint(x: fourthCorner.x, y:  fourthCorner.y + topCornerRadious)
+        let endPoint = CGPoint(x: fourthCorner.x - topCornerRadious, y: fourthCorner.y)
         
         //Draw
         path.move(to: startPoint)
@@ -360,6 +372,8 @@ public class BEKCurveTabbar: UITabBar {
         shadowColor = viewModel.shadowColor
         showTitle = viewModel.hideTitle
         animated = viewModel.animated
+        topCornerRadious = viewModel.topCornerRadius
+        bottomCornerRadious = viewModel.bottomCornerRadius
         barTintColor = viewModel.containerColor
         selectionCircleBorderColor = viewModel.selectionCircleBorderColor
         selectionCircleBorderWidth = viewModel.selectionCircleBorderWidth

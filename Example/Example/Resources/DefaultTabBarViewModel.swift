@@ -24,7 +24,8 @@ public struct DefaultTabBarViewModel: BEKTabBarViewModelType {
     public let selectedTextFont: UIFont = .systemFont(ofSize: 13)
     public let normalTextColor: UIColor = .lightGray
     public let normalTextFont: UIFont = .systemFont(ofSize: 11)
-    public let cornerRadius: CGFloat = TabbarHeightRatios.bestSize.cornerRadius()
+    public let topCornerRadius: CGFloat = TabbarHeightRatios.bestSize.cornerRadius()
+    public let bottomCornerRadius: CGFloat = TabbarHeightRatios.bestSize.cornerRadius()
     public let containerInsets: UIEdgeInsets = TabbarHeightRatios.bestSize.containerInsets()
     public let selectionCircleRadius: CGFloat = TabbarHeightRatios.bestSize.circleRadius()
     public let selectionCircleBorderWidth: CGFloat = 0.0

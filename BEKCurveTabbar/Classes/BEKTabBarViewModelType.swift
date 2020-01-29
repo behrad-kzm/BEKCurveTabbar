@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 public protocol BEKTabBarViewModelType {
-    var containerBorderWidth: CGFloat { get } 
+    var containerBorderWidth: CGFloat { get }
     var heightRatio: CGFloat { get }
     var containerBorderColor: UIColor { get }
     var containerColor: UIColor { get }
@@ -17,7 +17,8 @@ public protocol BEKTabBarViewModelType {
     var selectedTextFont: UIFont { get }
     var normalTextColor: UIColor { get }
     var normalTextFont: UIFont { get }
-    var cornerRadius: CGFloat { get }
+    var topCornerRadius: CGFloat { get }
+    var bottomCornerRadius: CGFloat { get }
     var shadowColor: UIColor { get }
     var shadowRadius: CGFloat { get }
     var containerInsets: UIEdgeInsets { get }
