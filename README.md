@@ -65,7 +65,8 @@ struct MyCustomTabBarViewModel: BEKTabBarViewModelType {
     let selectedTextFont: UIFont = .systemFont(ofSize: 13)
     let normalTextColor: UIColor = .lightGray
     let normalTextFont: UIFont = .systemFont(ofSize: 11)
-    let cornerRadius: CGFloat = 8
+    let topCornerRadius: CGFloat = TabbarHeightRatios.bestSize.cornerRadius()
+    let bottomCornerRadius: CGFloat = 0
     let containerInsets: UIEdgeInsets = TabbarHeightRatios.bestSize.containerInsets()
     let selectionCircleRadius: CGFloat = TabbarHeightRatios.bestSize.circleRadius()
     let selectionCircleBorderWidth: CGFloat = 0.0
