@@ -78,7 +78,7 @@ struct MyCustomTabBarViewModel: BEKTabBarViewModelType {
 
 ```
 
-__Note:__ ```TabbarHeightRatios.bestSize``` provides you computed values for different iOS enviroment. (recommended)
+__Note:__ ```TabbarHeightRatios.bestSize``` provides you computed values for different iOS environments. (recommended)
 
 Now you just need to pass your viewModel to ```.setupViewModel(viewModel: BEKTabBarViewModelType)``` function.
 
