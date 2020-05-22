@@ -48,7 +48,7 @@ __Default Config Usage:__
 
 __Customized Config Usage:__
 
-Create a new struct that confirms ```BEKTabBarViewModelType``` :
+Create a new struct that conforms to ```BEKTabBarViewModelType``` :
 
 ```swift
 struct MyCustomTabBarViewModel: BEKTabBarViewModelType {
