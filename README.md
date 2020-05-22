@@ -7,7 +7,7 @@ Full Customizable Tabbar with IBInspectables
 [![License](https://img.shields.io/cocoapods/l/JellySlider.svg?style=flat)](http://cocoapods.org/pods/JellySlider)
 [![Platform](https://img.shields.io/cocoapods/p/JellySlider.svg?style=flat)](http://cocoapods.org/pods/JellySlider)
 
-A fun replacement for UITabbar. The Component uses bezier paths.
+A fun replacement for UITabbar. The Component uses Bézier paths.
 ## Demo
 <img src="https://github.com/behrad-kzm/BEKCurveTabbar/blob/master/Preview.png" height="600"><img src="https://github.com/behrad-kzm/BEKCurveTabbar/blob/master/Preview2.png" height="600"><img src="https://github.com/behrad-kzm/BEKCurveTabbar/blob/master/Preview3.gif" height="600">
 
