@@ -17,7 +17,7 @@ __usage:__
 
 You can change appearance using xcode interface builder or use default config (recommended).
 ```BEKCurveTabbarController``` can setup with your custom ViewModel that confirms the ```BEKTabBarViewModelType``` protocol.
-you can set your 'tabbar' to BEKCurveTabbar indide interface builder or initiate it programatically with easiest way as possible like this:
+you can set your 'tabbar' to BEKCurveTabbar inside interface builder or initiate it programatically with easiest way as possible like this:
 
 __Note:__ ```BEKCurveTabbarController``` initiates with ```.initiate()```
 
