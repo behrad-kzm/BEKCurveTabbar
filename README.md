@@ -7,7 +7,7 @@ Full Customizable Tabbar with IBInspectables
 [![License](https://img.shields.io/cocoapods/l/JellySlider.svg?style=flat)](http://cocoapods.org/pods/JellySlider)
 [![Platform](https://img.shields.io/cocoapods/p/JellySlider.svg?style=flat)](http://cocoapods.org/pods/JellySlider)
 
-A fun replacement for UITabbar. The Component uses bezier paths.
+A fun replacement for UITabbar. The Component uses Bézier paths.
 ## Demo
 <img src="https://github.com/behrad-kzm/BEKCurveTabbar/blob/master/Preview.png" height="600"><img src="https://github.com/behrad-kzm/BEKCurveTabbar/blob/master/Preview2.png" height="600"><img src="https://github.com/behrad-kzm/BEKCurveTabbar/blob/master/Preview3.gif" height="600">
 
@@ -15,9 +15,9 @@ A fun replacement for UITabbar. The Component uses bezier paths.
 
 __usage:__
 
-You can change appearance using xcode interface builder or use default config (recommended).
-```BEKCurveTabbarController``` can setup with your custom ViewModel that confirms the ```BEKTabBarViewModelType``` protocol.
-you can set your 'tabbar' to BEKCurveTabbar indide interface builder or initiate it programatically with easiest way as possible like this:
+You can change the appearance by using Xcode Interface Builder or by using the default config (recommended).
+```BEKCurveTabbarController``` can be setup with your custom ViewModel that conforms to the ```BEKTabBarViewModelType``` protocol.
+you can set your 'tabbar' to BEKCurveTabbar inside Interface Builder or initiate it programatically in the easiest way possible like this:
 
 __Note:__ ```BEKCurveTabbarController``` initiates with ```.initiate()```
 
@@ -48,7 +48,7 @@ __Default Config Usage:__
 
 __Customized Config Usage:__
 
-Create a new struct that confirms ```BEKTabBarViewModelType``` :
+Create a new struct that conforms to ```BEKTabBarViewModelType``` :
 
 ```swift
 struct MyCustomTabBarViewModel: BEKTabBarViewModelType {
@@ -78,7 +78,7 @@ struct MyCustomTabBarViewModel: BEKTabBarViewModelType {
 
 ```
 
-__Note:__ ```TabbarHeightRatios.bestSize``` provides you computed values for different iOS enviroment. (recommended)
+__Note:__ ```TabbarHeightRatios.bestSize``` provides you computed values for different iOS environments. (recommended)
 
 Now you just need to pass your viewModel to ```.setupViewModel(viewModel: BEKTabBarViewModelType)``` function.
 
